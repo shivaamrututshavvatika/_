@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivaamrut Utshav Vatika | Nature Stay & Farm Resort in Haripur, Odisha</title>
+<meta name="google-site-verification" content="aqDvI6o5svmRMItCF3chWeHGlDiN7B1bZoV7Av1_5j4" />
+<meta name="description" content="Shivaamrut Utshav Vatika is a peaceful nature stay and farm resort in Haripur, Odisha offering organic food, mountain views, ponds, fishing, family picnics, and event hosting.">
+<meta name="keywords" content="farm stay Odisha, nature resort, organic food retreat">
+<meta property="og:title" content="Shivaamrut Utshav Vatika">
+<meta property="og:description" content="Experience nature, organic food, and peaceful mountain views at Shivaamrut Utshav Vatika.">
+<meta property="og:image" content="resort.jpeg">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Shivaamrut Utshav Vatika","description":"Nature stay and farm resort offering organic food, mountain views, ponds, fishing, family picnics, and events.","address":{"@type":"PostalAddress","streetAddress":"Brundaban, Near Haripur High School, PO: Khanguria","addressLocality":"Bolagarh","addressRegion":"Odisha","addressCountry":"IN"},"telephone":"+91-7207601644","email":"shivaamrututshavvatika@gmail.com"}</script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.jpeg">
+<script type="module">import{initializeApp}from"https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";import{getFirestore,collection,addDoc,query,orderBy,onSnapshot,serverTimestamp}from"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";const firebaseConfig={apiKey:"AIzaSyAWBs3aJEWYK8QVJSVH1sL8JMP2GNdvU-c",authDomain:"shivaamrututshavvatika-5caa5.firebaseapp.com",projectId:"shivaamrututshavvatika-5caa5",storageBucket:"shivaamrututshavvatika-5caa5.firebasestorage.app",messagingSenderId:"350019039255",appId:"1:350019039255:web:258668daacbd8200ceec52",measurementId:"G-R57HF0ZKV0"},app=initializeApp(firebaseConfig),db=getFirestore(app);window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("reviewForm"),t=query(collection(db,"reviews"),orderBy("createdAt","desc"));onSnapshot(t,e=>{const t=[];e.forEach(e=>{t.push(e.data())}),window.renderReviews(t)}),e.addEventListener("submit",async t=>{t.preventDefault();const a=document.getElementById("reviewerName").value.trim(),n=parseInt(document.getElementById("reviewRating").value),r=document.getElementById("reviewText").value.trim();return a&&n&&r?(await addDoc(collection(db,"reviews"),{name:a,rating:n,review:r,createdAt:serverTimestamp()}),void e.reset()):alert("Please fill all fields.")});const a=document.querySelectorAll(".fade-in"),n={threshold:.2,rootMargin:"0px 0px -50px 0px"},r=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.isIntersecting&&(e.target.style.animation="fadeInElement 1s ease forwards",t.unobserve(e.target))})},n);a.forEach(e=>r.observe(e))});</script>
+<style>  
+:root{--emerald-900:#064e3b;--cyan-700:#0e7490;--orange-300:#fdba74;--emerald-700:#047857;--cyan-500:#06b6d4}  
+body{font-family:sans-serif;margin:0;padding:0;opacity:0;animation:pageFadeIn 1s ease forwards}  
+@keyframes pageFadeIn{to{opacity:1}}  
+.fade-in{opacity:0;transform:translateY(20px)}  
+@keyframes fadeInElement{to{opacity:1;transform:translateY(0)}}  
+.scrolled{background-color:#fff!important;box-shadow:0 2px 6px rgba(0,0,0,.1)}  
+.scrolled .nav-link,.scrolled .resort-name{color:var(--emerald-900)!important}  
+.scrolled #menuBtn .bar{background-color:var(--emerald-900)!important}  
+#menuBtn.open .bar:nth-child(1){transform:rotate(45deg) translate(5px,5px)}  
+#menuBtn.open .bar:nth-child(2){opacity:0}  
+#menuBtn.open .bar:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}  
+#navLinksMobile{max-height:0;overflow:hidden;transition:max-height .4s ease}  
+#navLinksMobile.open{max-height:500px}  
+#navLinksMobile a{display:block;padding:12px 0;text-align:center;color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.2)}  
+@media(min-width:768px){#navLinksMobile{display:none!important}}  
+.gallery-container{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden}  
+.gallery-slide{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1s}  
+.gallery-slide img{width:100%;height:100%;object-fit:cover}  
+.gallery-slide.active{opacity:1;position:relative}  
+.prev,.next{cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);padding:10px;color:#fff;font-weight:700;font-size:24px;border-radius:9999px;background:rgba(0,0,0,.5);user-select:none;z-index:10}  
+.next{right:10px}  
+.prev{left:10px}  
+.prev:hover,.next:hover{background:rgba(0,0,0,.8)}  
+.dots-container{text-align:center;margin-top:10px}  
+.dots-container .dot{cursor:pointer;height:12px;width:12px;margin:0 3px;background:#bbb;border-radius:50%;display:inline-block;transition:background-color .6s}  
+.dots-container .dot.active{background:#717171}  
+#reviewsList{position:relative;overflow:hidden;transition:height .6s ease}  
+.review-slide{display:none;opacity:0;transition:opacity .6s ease-in-out;min-height:150px}  
+.review-slide.active{display:block;opacity:1}  
+.review-prev,.review-next{cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);padding:8px 12px;color:#374151;font-weight:700;font-size:20px;border-radius:9999px;background:rgba(255,255,255,.7);user-select:none;z-index:10}  
+.review-prev{left:10px}  
+.review-next{right:10px}  
+.review-prev:hover,.review-next:hover{background:#fff}  
+.review-dots .dot{cursor:pointer;height:12px;width:12px;margin:0 3px;background:#bbb;border-radius:50%;display:inline-block;transition:background-color .6s}  
+.review-dots .dot.active{background:#717171}  
+.floating-btn{position:fixed;bottom:20px;left:20px;z-index:1000}  
+.floating-btn img{width:50px;height:50px;border-radius:50%;box-shadow:0 4px 6px rgba(0,0,0,.2);transition:transform .2s ease;cursor:pointer}  
+.floating-btn img:hover{transform:scale(1.1)}  
+.back-to-top{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background:#2563eb;border-radius:50%;display:none;justify-content:center;align-items:center;z-index:1000;cursor:pointer;box-shadow:0 4px 6px rgba(0,0,0,.2);transition:opacity .3s,transform .3s}  
+.back-to-top img{width:24px;height:24px;filter:invert(1)}  
+.back-to-top:hover{transform:scale(1.1)}  
+.social-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin-top:1.5rem}  
+.hero-logo{height:120px;width:120px;transition:height .3s,width .3s;margin-bottom:1.25rem}  
+@media(max-width:1024px){.hero-logo{height:90px;width:90px}}  
+@media(max-width:768px){.hero-logo{height:60px;width:60px}}  
+.hero-overlay{background:linear-gradient(to right,rgba(6,78,59,.7),rgba(14,116,144,.7),rgba(253,186,116,.7))}  
+.video-container{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden}  
+.video-slide{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1s}  
+.video-slide video{width:100%;height:100%;object-fit:cover;pointer-events:auto}  
+.video-slide.active{opacity:1;position:relative}  
+.controls-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));padding:20px;display:flex;align-items:center;gap:15px;z-index:15;opacity:0;transition:opacity .3s}  
+.video-container:hover .controls-overlay{opacity:1}  
+.play-pause-btn{background:none;border:none;color:#fff;font-size:20px;cursor:pointer;width:30px}  
+.unmute-btn{cursor:pointer;color:#fff;background:rgba(255,255,255,.2);padding:5px 12px;border-radius:20px;font-size:14px;white-space:nowrap}  
+.seek-bar{flex-grow:1;cursor:pointer;accent-color:#10b981}  
+.seek-feedback{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.7);color:#fff;padding:10px 20px;border-radius:20px;pointer-events:none;opacity:0;transition:opacity .2s;z-index:100}  
+.seek-feedback.active{opacity:1}  
+.guest-container{position:relative;width:100%;max-width:900px;aspect-ratio:16/9;margin:auto;overflow:hidden;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.25)}  
+.guest-slide{position:absolute;inset:0;opacity:0;transition:opacity 1s}  
+.guest-slide.active{opacity:1;position:relative}  
+.guest-slide video{width:100%;height:100%;object-fit:cover}  
+.guest-prev,.guest-next{position:absolute;top:50%;transform:translateY(-50%);padding:10px;font-size:24px;color:#fff;background:rgba(0,0,0,.5);border-radius:9999px;cursor:pointer;z-index:10}  
+.guest-prev{left:10px}.guest-next{right:10px}  
+.guest-controls{position:absolute;bottom:0;left:0;right:0;padding:18px;display:flex;gap:12px;align-items:center;background:linear-gradient(transparent,rgba(0,0,0,.7));opacity:0;transition:.3s;z-index:15}  
+.guest-container:hover .guest-controls{opacity:1}  
+.guest-play{background:none;border:0;color:#fff;font-size:22px;cursor:pointer;width:30px}  
+.guest-seek{flex-grow:1;accent-color:#10b981;cursor:pointer}  
+.guest-mute{color:#fff;background:rgba(255,255,255,.2);padding:6px 14px;border-radius:9999px;cursor:pointer}  
+.guest-dots{text-align:center;margin-top:16px}  
+.guest-dots .dot{height:12px;width:12px;margin:0 4px;background:#bbb;border-radius:50%;display:inline-block;cursor:pointer}  
+.guest-dots .dot.active{background:#717171}  
+</style>
+</head>
+<body>
+<nav id="navbar" class="fixed w-full z-50 transition duration-300" style="background-color: rgba(0,0,0,0.6);">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16 relative">
+    <a href="#home" class="flex items-center space-x-3">
+      <img src="logo.jpeg" alt="Resort Logo" class="h-10 w-10 rounded-full">
+      <span class="resort-name font-bold text-lg text-white">Shivaamrut Utshav Vatika</span>
+    </a>
+    <div id="navLinksDesktop" class="hidden md:flex space-x-4">
+      <a href="#home" class="nav-link text-white hover:text-pink-500 font-semibold">Home</a>
+      <a href="#about" class="nav-link text-white hover:text-green-500 font-semibold">About</a>
+      <a href="#facilities" class="nav-link text-white hover:text-purple-500 font-semibold">Facilities</a>
+      <a href="#leadership" class="nav-link text-white hover:text-red-500 font-semibold">Vision</a>
+      <a href="#gallery" class="nav-link text-white hover:text-blue-500 font-semibold">Gallery</a>
+      <a href="#videos" class="nav-link text-white hover:text-teal-500 font-semibold">Explore</a>
+      <a href="#guest-video-reviews" class="nav-link text-white hover:text-amber-500 font-semibold">Real Moments</a>
+      <a href="#reviews" class="nav-link text-white hover:text-yellow-500 font-semibold">Reviews</a>
+      <a href="#contact" class="nav-link text-white hover:text-orange-500 font-semibold">Contact Us</a>
+    </div>
+    <div class="md:hidden z-50">
+      <button id="menuBtn" class="text-white focus:outline-none relative flex flex-col justify-between items-center" style="width:24px; height:24px;">
+        <span class="bar block w-full h-1 bg-white rounded transition-all duration-300"></span>
+        <span class="bar block w-full h-1 bg-white rounded transition-all duration-300"></span>
+        <span class="bar block w-full h-1 bg-white rounded transition-all duration-300"></span>
+      </button>
+    </div>
+  </div>
+  <div id="navLinksMobile" class="flex-col md:hidden" style="background-color:#064e3b;" >
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#leadership">Vision</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Explore</a>
+    <a href="#guest-video-reviews">Real Moments</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</nav>
+<section id="home" class="relative h-screen flex items-center justify-center text-center text-white fade-in">
+  <div class="absolute inset-0">
+    <img src="resort.jpeg" alt="Shivaamrut Utshav Vatika Building" class="w-full h-full object-cover">
+    <div class="absolute inset-0 hero-overlay"></div>
+  </div>
+  <div class="relative z-10 max-w-3xl px-4">
+    <img src="logo.jpeg" alt="Shivaamrut Utshav Vatika Logo" class="hero-logo mx-auto rounded-full fade-in">
+    <h1 class="text-3xl md:text-4xl sm:text-3xl font-extrabold mb-4 text-yellow-300 fade-in" style="color:#fdba74;">Welcome to Shivaamrut Utshav Vatika</h1>
+    <p class="text-lg mb-6 text-gray-200 fade-in">Nature Stay | Organic Dining | Fishing Deck | Mountain View | Selfie Points | Ponds | Family Events | Relaxing Vibes</p>
+    <a href="#about"
+   class="text-white px-6 py-3 rounded-full font-semibold transition fade-in"
+   style="background-color:#0e7490;"
+   onmouseover="this.style.backgroundColor='#06b6d4'"
+   onmouseout="this.style.backgroundColor='#0e7490'">
+  Learn More
+</a>
+  </div>
+</section>
+<section id="about"
+  class="py-16 text-center fade-in"
+  style="background:linear-gradient(to right,#ecfdf5,#cffafe);">
+  <h2 class="text-4xl font-bold mb-6 text-indigo-900 fade-in" style="color:#064e3b;">
+  About Us
+</h2>
+  <p class="max-w-3xl mx-auto text-lg text-gray-700 fade-in">
+    At Shivaamrut Utshav Vatika, we believe that the purest luxury is the sound of silence, the view of the mountains, and the taste of food grown from the very soil beneath your feet. Come for the view, stay for the peace, and leave with a soul full of memories.
+  </p>
+</section>
+<section id="facilities" class="py-16 text-center fade-in"
+  style="background:linear-gradient(to right,#f8fafc,#eef2f7);">
+  <h2 class="text-4xl font-bold mb-6 text-indigo-900 fade-in" style="color:#064e3b;">Our Facilities</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <div class="p-6 rounded-2xl shadow-lg fade-in"
+     style="background:linear-gradient(to bottom right,#e8f5e9,#d1fae5);">
+      <h3 class="font-semibold text-xl mb-2 text-indigo-800">Organic Farming</h3>
+      <p class="text-gray-700">Experience the "Farm-to-Table" lifestyle. Wander through our chemical-free gardens and enjoy fresh, seasonal produce harvested straight from the earth to your plate.</p>
+    </div>
+    <div class="p-6 rounded-2xl shadow-lg fade-in"
+     style="background:linear-gradient(to bottom right,#e0f2fe,#bae6fd);">
+      <h3 class="font-semibold text-xl mb-2 text-pink-800">Ponds & Fishing</h3>
+      <p class="text-gray-700">Find your zen by our tranquil waters. Whether you're looking for a quiet spot to meditate or want to try your hand at recreational fishing, our serene ponds offer the ultimate escape.</p>
+    </div>
+    <div class="p-6 rounded-2xl shadow-lg fade-in"
+     style="background:linear-gradient(to bottom right,#ede9fe,#dbeafe);">
+      <h3 class="font-semibold text-xl mb-2 text-green-800">Mountain Views</h3>
+      <p class="text-gray-700">Nature is your neighbor here. Every corner of the Vatika offers stunning, panoramic views of the majestic peaks, providing a breathtaking backdrop for your morning tea or evening stroll.</p>
+    </div>
+    <div class="p-6 rounded-2xl shadow-lg fade-in md:col-span-3"
+     style="background:linear-gradient(to bottom right,#fff1e6,#fde2c5);">
+      <h3 class="font-semibold text-xl mb-2 text-amber-800" style="color:#9a3412;">Photographic Zones</h3>
+      <p class="text-gray-700">Capture the magic of your stay in our curated "picture-perfect" areas. From rustic landscapes to scenic overlooks, we provide the ideal setting for your memories and social media feeds.</p>
+    </div>
+    <div class="p-6 rounded-2xl shadow-lg fade-in md:col-span-3"
+     style="background:linear-gradient(to bottom right,#fef3c7,#fde68a);">
+      <h3 class="font-semibold text-xl mb-2 text-yellow-800">Earth-Inspired Food</h3>
+      <p class="text-gray-700">Taste the purity of nature. Our kitchen serves wholesome, traditional meals prepared with organic ingredients, mountain-fresh water, and a touch of local love.</p>
+    </div>
+  </div>
+</section>
+<section id="leadership" class="py-16 fade-in" style="background:linear-gradient(90deg,#ecfdf5,#d1fae5,#ccfbf1);"><div class="max-w-7xl mx-auto px-4"><h2 class="text-4xl font-bold mb-12 text-center text-indigo-900 fade-in">Vision Of Our Founders</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"><div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg text-center fade-in"><img src="fo.jpeg" alt="Founder of Shivaamrut Utshav Vatika" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md border-4 border-white"><h3 class="text-2xl font-bold text-emerald-900 mb-2">Founder’s Message</h3><h4 class="text-xl text-gray-700 font-semibold mb-4">Shri. Susant Kumar Rath</h4><p class="text-gray-600 italic text-left whitespace-pre-line">Dear Guest,
+  
+Shivaamrut Utshav Vatika was born from a simple belief — that true peace lies in reconnecting with nature. Our vision is to create a space where families, friends, and travelers can slow down, breathe fresh air, enjoy organic food, and experience the joy of rural simplicity.
+
+Every corner of our Vatika reflects our commitment to sustainability, warmth, and heartfelt hospitality. We welcome you not just as guests, but as part of our extended family.
+
+Warm regards,
+Susant Kumar Rath</p></div><div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl shadow-lg text-center fade-in"><img src="co.jpeg" alt="Co-Founder of Shivaamrut Utshav Vatika" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md border-4 border-white"><h3 class="text-2xl font-bold text-indigo-900 mb-2">Co-Founder’s Desk</h3><h4 class="text-xl text-gray-700 font-semibold mb-4">Smt. Smrutimayee Rath</h4><p class="text-gray-600 italic text-left whitespace-pre-line">Dear Guest,
+
+At Shivaamrut Utshav Vatika, our goal is to offer more than just a stay — we offer an experience rooted in nature, simplicity, and care. From organic farming to peaceful surroundings, every detail is designed to make you feel relaxed and refreshed.
+
+We look forward to hosting families, travelers, and nature lovers who seek meaningful moments away from busy life.
+
+With warm wishes,
+Smrutimayee Rath</p></div></div></div></section>
+<section id="gallery" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 text-center fade-in">
+  <h2 class="text-4xl font-bold mb-6 text-indigo-900 fade-in" style="color:#064e3b;">Gallery</h2>
+  <div class="gallery-container relative max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg fade-in">
+    <div class="gallery-slide active"><img src="img1.jpeg" loading="lazy" alt="Resort Image 1" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img2.jpeg" loading="lazy" alt="Resort Image 2" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img3.jpeg" loading="lazy" alt="Resort Image 3" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img4.jpeg" loading="lazy" alt="Resort Image 4" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img5.jpeg" loading="lazy" alt="Resort Image 5" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img6.jpeg" loading="lazy" alt="Resort Image 6" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img7.jpeg" loading="lazy" alt="Resort Image 7" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img8.jpeg" loading="lazy" alt="Resort Image 8" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img9.jpeg" loading="lazy" alt="Resort Image 9" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img10.jpeg" loading="lazy" alt="Resort Image 10" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img11.jpeg" loading="lazy" alt="Resort Image 11" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img12.jpeg" loading="lazy" alt="Resort Image 12" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img13.jpeg" loading="lazy" alt="Resort Image 13" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img14.jpeg" loading="lazy" alt="Resort Image 14" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img15.jpeg" loading="lazy" alt="Resort Image 15" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img16.jpeg" loading="lazy" alt="Resort Image 16" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img17.jpeg" loading="lazy" alt="Resort Image 17" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img18.jpeg" loading="lazy" alt="Resort Image 18" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img19.jpeg" loading="lazy" alt="Resort Image 19" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img20.jpeg" loading="lazy" alt="Resort Image 20" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img21.jpeg" loading="lazy" alt="Resort Image 21" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img22.jpeg" loading="lazy" alt="Resort Image 22" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img23.jpeg" loading="lazy" alt="Resort Image 23" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img24.jpeg" loading="lazy" alt="Resort Image 24" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img25.jpeg" loading="lazy" alt="Resort Image 25" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img26.jpeg" loading="lazy" alt="Resort Image 26" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img27.jpeg" loading="lazy" alt="Resort Image 27" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img28.jpeg" loading="lazy" alt="Resort Image 28" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img29.jpeg" loading="lazy" alt="Resort Image 29" class="w-full rounded-xl"></div>
+    <div class="gallery-slide"><img src="img30.jpeg" loading="lazy" alt="Resort Image 30" class="w-full rounded-xl"></div>
+    <a class="prev">❮</a>
+    <a class="next">❯</a>
+  </div>
+  <div class="dots-container">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+<section id="videos" class="bg-gradient-to-r from-blue-100 to-indigo-100 py-16 text-center fade-in">
+  <h2 class="text-4xl font-bold mb-6" style="color:#064e3b;">Explore Our Vatika</h2>
+  <div class="video-container max-w-4xl mx-auto rounded-xl shadow-lg">
+    <div class="video-slide active"><video muted preload="metadata"><source src="video1.mp4" type="video/mp4"></video></div>
+    <div class="video-slide"><video muted preload="metadata"><source src="video2.mp4" type="video/mp4"></video></div>
+    <div class="video-slide"><video muted preload="metadata"><source src="video3.mp4" type="video/mp4"></video></div>
+    <div class="video-slide"><video muted preload="metadata"><source src="video4.mp4" type="video/mp4"></video></div>
+    <div class="controls-overlay">
+      <button class="play-pause-btn">❚❚</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+      <span class="unmute-btn">🔇 Unmute</span>
+    </div>
+    <a class="prev">❮</a>
+    <a class="next">❯</a>
+  </div>
+  <div class="dots-container"></div>
+  </section>
+<section id="guest-video-reviews" class="bg-gradient-to-br from-yellow-100 to-orange-50 py-16 text-center fade-in">
+  <h2 class="text-4xl font-bold mb-10" style="color:#064e3b;">
+    Real Moments
+  </h2>
+  <div class="guest-container">
+    <div class="guest-slide active">
+      <video muted preload="metadata">
+        <source src="videor1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor3.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor4.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor5.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor6.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor7.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor8.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor9.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-slide">
+      <video muted preload="metadata">
+        <source src="videor10.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="guest-controls">
+      <button class="guest-play">❚❚</button>
+      <input type="range" class="guest-seek" min="0" max="100" value="0">
+      <span class="guest-mute">🔇 Unmute</span>
+    </div>
+    <a class="guest-prev">❮</a>
+    <a class="guest-next">❯</a>
+  </div>
+  <div class="guest-dots"></div>
+</section>
+<section id="reviews" class="py-16 text-center fade-in"
+  style="background:linear-gradient(to right,#fff1f2,#ffe4e6);">
+  <h2 class="text-4xl font-bold mb-6 text-indigo-900" style="color:#064e3b;">Reviews & Ratings</h2>
+  <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg mb-12">
+    <h3 class="text-2xl font-semibold mb-4 text-indigo-900" style="color:#064e3b;">Leave a Review</h3>
+    <form id="reviewForm" class="space-y-4">
+      <input type="text" id="reviewerName" placeholder="Your Name" class="w-full border p-3 rounded-lg" required>
+      <select id="reviewRating" class="w-full border p-3 rounded-lg" required>
+        <option value="">Select Rating ⭐</option>
+        <option value="5">⭐⭐⭐⭐⭐ (Excellent)</option>
+        <option value="4">⭐⭐⭐⭐ (Very Good)</option>
+        <option value="3">⭐⭐⭐ (Good)</option>
+        <option value="2">⭐⭐ (Fair)</option>
+        <option value="1">⭐ (Poor)</option>
+      </select>
+      <textarea id="reviewText" placeholder="Your Review" class="w-full border p-3 rounded-lg" rows="4" required></textarea>
+      <button type="submit"
+  class="text-white px-6 py-3 rounded-full font-semibold transition"
+  style="background-color:#064e3b;"
+  onmouseover="this.style.backgroundColor='#047857'"
+  onmouseout="this.style.backgroundColor='#064e3b'">
+  Submit Review
+      </button>
+      <p id="reviewStatus" class="mt-3 text-sm text-gray-600"></p>
+    </form>
+  </div>
+  <div class="dots-container"></div>
+  </div>
+  <div class="relative max-w-3xl mx-auto p-4 text-left">
+    <div id="reviewsList" class="relative overflow-hidden">
+      </div>
+    <a class="review-prev">❮</a>
+    <a class="review-next">❯</a>
+  </div>
+  <div class="review-dots text-center mt-4"></div>
+</section>
+<section id="contact" class="py-16 text-center fade-in"
+  style="background:linear-gradient(to right,#ecfdf5,#e0f2fe);">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg mb-12 fade-in">
+        <h3 class="text-2xl font-semibold mb-6 text-indigo-900" style="color:#064e3b;">Enquiry Form</h3>
+        <form id="enquiryForm" action="https://formspree.io/f/xeekrjzd" method="POST" class="space-y-4">
+<input type="text" name="name" placeholder="Your Full Name" required class="w-full border p-3 rounded-lg">
+<input type="email" name="email" placeholder="Your Email" required class="w-full border p-3 rounded-lg">
+<input type="tel" name="phone" placeholder="Your Phone Number" required class="w-full border p-3 rounded-lg">
+<div class="border p-3 rounded-lg flex items-center justify-between">
+  <span class="font-semibold text-gray-700 whitespace-nowrap">
+    Select Check-in
+  </span>
+  <input
+    type="date"
+    name="check_in_date"
+    required
+    class="border rounded-md px-2 py-1 w-36 text-sm cursor-pointer">
+</div>
+<div class="border p-3 rounded-lg flex items-center justify-between">
+  <span class="font-semibold text-gray-700 whitespace-nowrap">
+    Select Check-out
+  </span>
+  <input
+    type="date"
+    name="check_out_date"
+    required
+    class="border rounded-md px-2 py-1 w-36 text-sm cursor-pointer">
+</div>
+<select name="visit_type" required class="w-full border p-3 rounded-lg">
+<option value="">Type of Visit</option>
+<option>Day Visit</option>
+<option>Overnight Stay</option>
+<option>Family Picnic</option>
+<option>Wedding / Event</option>
+<option>Corporate / Group Visit</option>
+</select>
+<div class="border p-3 rounded-lg flex items-center justify-between flex-nowrap">
+<span class="font-semibold text-gray-700 whitespace-nowrap">Complimentary Food</span>
+<div class="flex gap-4">
+<label class="flex items-center cursor-pointer gap-2">
+<input type="radio" name="complimentary_food" value="Yes" required>
+<span>Yes</span>
+</label>
+<label class="flex items-center cursor-pointer gap-2">
+<input type="radio" name="complimentary_food" value="No" required>
+<span>No</span>
+</label>
+</div>
+</div>
+<textarea name="message" placeholder="Any special requests?" required rows="4" class="w-full border p-3 rounded-lg"></textarea>
+<button type="submit" class="text-white px-6 py-3 rounded-full font-semibold" style="background:#064e3b">
+Send Enquiry
+</button>
+<div id="enquiryStatus" class="mt-3 text-sm"></div>
+</form>
+    </div>
+    <h2 class="text-4xl font-bold mb-6 text-indigo-900 fade-in" style="color:#064e3b;">Contact Us</h2>
+    <p class="mb-2 fade-in">📍 Brundaban,Near Haripur High School, Khanguria, Bolagarh, Khordha, Odisha</p>
+    <p class="mb-2 fade-in">📞 Phone: +91 72076 01644, +91 9810798879</p>
+    <p class="mb-4 fade-in">✉️ Email: <a href="mailto:shivaamrututshavvatika3@gmail.com" class="text-blue-600 underline">shivaamrututshavvatika@gmail.com</a></p>
+    <a href="https://maps.app.goo.gl/hGbqLsFnC3S2FfYLA" target="_blank" class="text-blue-600 underline fade-in">View on Google Maps</a>
+    <div class="social-links fade-in">
+        <a href="https://www.facebook.com/share/19yN3LsXX1/" target="_blank" class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="h-8 w-8">
+            <span>@shivaamrut_utshav_vatika</span>
+        </a>
+        <a href="https://www.instagram.com/shivaamrut_utshav_vatika/?utm_source=ig_web_button_share_sheet" target="_blank" class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="h-8 w-8">
+            <span>@shivaamrut_utshav_vatika</span>
+        </a>
+        <a href="https://www.youtube.com/@Shivaamrut_Utshav_Vatika" target="_blank" class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="h-8 w-8">
+            <span>@Shivaamrut_Utshav_Vatika</span>
+        </a>
+    </div>
+</section>
+<footer class="text-white text-center py-6 fade-in" style="background-color:#064e3b;">
+  <p>© 2026 Shivaamrut Utshav Vatika. All Rights Reserved.</p>
+</footer>
+<div class="floating-btn">
+  <a href="https://wa.me/917207601644" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+  </a>
+</div>
+<div class="back-to-top" onclick="scrollToTop()">
+  <img src="https://cdn-icons-png.flaticon.com/512/130/130906.png" alt="Back to Top">
+</div>
+<script>
+const navbar = document.getElementById("navbar"),
+menuBtn = document.getElementById("menuBtn"),
+navLinksMobile = document.getElementById("navLinksMobile"),
+backToTop = document.querySelector(".back-to-top");
+addEventListener("scroll", () => {
+const s = scrollY > 50;
+navbar.classList.toggle("scrolled", s);
+menuBtn.querySelectorAll(".bar").forEach(b => b.classList.toggle("bg-[#1e1b4b]", s));
+backToTop.style.display = scrollY > 100 ? "flex" : "none";
+});
+menuBtn.onclick = () => {
+menuBtn.classList.toggle("open");
+navLinksMobile.classList.toggle("open");
+};
+navLinksMobile.querySelectorAll("a").forEach(a => a.onclick = () => {
+menuBtn.classList.remove("open");
+navLinksMobile.classList.remove("open");
+});
+scrollToTop = () => scrollTo({
+top: 0,
+behavior: "smooth"
+});
+let gIndex = 0,
+gStartX = 0;
+const gSlides = [...document.querySelectorAll(".gallery-slide")],
+gDots = [...document.querySelectorAll(".dots-container .dot")],
+gallery = document.querySelector(".gallery-container"),
+gPrev = document.querySelector(".prev"),
+gNext = document.querySelector(".next");
+function showGallery(n) {
+gIndex = (n + gSlides.length) % gSlides.length;
+gSlides.forEach(s => s.classList.remove("active"));
+gSlides[gIndex].classList.add("active");
+const di = Math.floor(gIndex / 3);
+gDots.forEach(d => d.classList.remove("active"));
+gDots[di]?.classList.add("active");
+}
+gPrev.onclick = () => showGallery(--gIndex);
+gNext.onclick = () => showGallery(++gIndex);
+gDots.forEach((d, i) => d.onclick = () => showGallery(i * 3));
+gallery.addEventListener("touchstart", e => gStartX = e.touches[0].clientX, {
+passive: 1
+});
+gallery.addEventListener("touchend", e => {
+const dx = gStartX - e.changedTouches[0].clientX;
+Math.abs(dx) > 50 && showGallery(gIndex + (dx > 0 ? 1 : -1));
+});
+setInterval(() => showGallery(++gIndex), 3000);
+showGallery(0);
+let rIndex = 0,
+rSlides = [],
+rDots = [],
+rTimer, rStartX = 0;
+const rBox = document.getElementById("reviewsList"),
+rDotsBox = document.querySelector(".review-dots"),
+rPrev = document.querySelector(".review-prev"),
+rNext = document.querySelector(".review-next");
+function showReview(n) {
+if (!rSlides.length) return;
+rIndex = (n + rSlides.length) % rSlides.length;
+rSlides.forEach(s => s.classList.remove("active"));
+rDots.forEach(d => d.classList.remove("active"));
+rSlides[rIndex].classList.add("active");
+rDots[rIndex].classList.add("active");
+rBox.style.height = rSlides[rIndex].offsetHeight + "px";
+}
+window.renderReviews = (data) => {
+clearInterval(rTimer);
+rBox.innerHTML = "";
+rDotsBox.innerHTML = "";
+if (!data.length) {
+rBox.innerHTML = '<p class="text-gray-500 text-center">Be the first to leave a review!</p>';
+return;
+}
+rSlides = [];
+rDots = [];
+data.forEach((r, i) => {
+const s = document.createElement("div");
+s.className = "review-slide bg-white p-6 rounded-lg shadow-md relative";
+const t = (r.createdAt?.toDate?.() || new Date()).toLocaleString("en-IN", {
+dateStyle: "medium",
+timeStyle: "short"
+});
+const nameEl = document.createElement("p");
+nameEl.className = "font-semibold text-indigo-900";
+nameEl.textContent = r.name; 
+const ratingEl = document.createElement("p");
+ratingEl.className = "text-yellow-500 mt-1";
+ratingEl.textContent = "⭐".repeat(r.rating || 0);
+const reviewEl = document.createElement("p");
+reviewEl.className = "italic mt-2";
+reviewEl.textContent = `"${r.review}"`; 
+const dateEl = document.createElement("p");
+dateEl.className = "text-sm text-gray-400 absolute bottom-2 right-3";
+dateEl.textContent = t;
+s.appendChild(nameEl);
+s.appendChild(ratingEl);
+s.appendChild(reviewEl);
+s.appendChild(dateEl);
+rBox.appendChild(s);
+rSlides.push(s);
+const d = document.createElement("span");
+d.className = "dot";
+d.onclick = () => showReview(i);
+rDotsBox.appendChild(d);
+rDots.push(d);
+});
+showReview(0);
+rTimer = setInterval(() => showReview(++rIndex), 5000);
+};
+rPrev.onclick = () => showReview(--rIndex);
+rNext.onclick = () => showReview(++rIndex);
+rBox.addEventListener("touchstart", e => rStartX = e.touches[0].clientX, {
+passive: 1
+});
+rBox.addEventListener("touchend", e => {
+const dx = rStartX - e.changedTouches[0].clientX;
+Math.abs(dx) > 50 && showReview(rIndex + (dx > 0 ? 1 : -1));
+});
+(() => {
+const sec = document.getElementById("videos");
+if (!sec) return;
+let vIndex = 0,
+muted = 1,
+startX = 0,
+lastTap = 0;
+const slides = [...sec.querySelectorAll(".video-slide")],
+prev = sec.querySelector(".prev"),
+next = sec.querySelector(".next"),
+dotsBox = sec.querySelector(".dots-container"),
+muteBtn = sec.querySelector(".unmute-btn"),
+playBtn = sec.querySelector(".play-pause-btn"),
+seekBar = sec.querySelector(".seek-bar"),
+container = sec.querySelector(".video-container"),
+dots = [],
+video = () => slides[vIndex].querySelector("video");
+dotsBox.innerHTML = "";
+slides.forEach((_, i) => {
+const d = document.createElement("span");
+d.className = "dot";
+d.onclick = () => show(i);
+dotsBox.appendChild(d);
+dots.push(d);
+});
+function stopAll() {
+slides.forEach(s => {
+const v = s.querySelector("video");
+v && (v.pause(), v.currentTime = 0);
+s.classList.remove("active");
+})
+}
+function show(n) {
+vIndex = (n + slides.length) % slides.length;
+stopAll();
+slides[vIndex].classList.add("active");
+dots.forEach(d => d.classList.remove("active"));
+dots[vIndex].classList.add("active");
+const v = video();
+v && (v.muted = muted, v.play().catch(() => {}), updatePlay())
+}
+function updatePlay() {
+playBtn.textContent = video()?.paused ? "▶" : "❚❚"
+}
+playBtn.onclick = e => {
+e.stopPropagation();
+const v = video();
+v && (v.paused ? v.play() : v.pause())
+};
+slides.forEach(s => {
+const v = s.querySelector("video");
+v && (v.addEventListener("play", updatePlay), v.addEventListener("pause", updatePlay), v.addEventListener("timeupdate", () => v.duration && (seekBar.value = v.currentTime / v.duration * 100)), v.addEventListener("ended", () => show(vIndex + 1)))
+});
+seekBar.oninput = () => {
+const v = video();
+v && v.duration && (v.currentTime = seekBar.value / 100 * v.duration)
+};
+muteBtn.onclick = () => {
+muted = !muted;
+muteBtn.textContent = muted ? "🔇 Unmute" : "🔊 Mute";
+slides.forEach(s => s.querySelector("video") && (s.querySelector("video").muted = muted))
+};
+prev.onclick = () => show(vIndex - 1);
+next.onclick = () => show(vIndex + 1);
+container.addEventListener("touchstart", e => startX = e.touches[0].clientX, {
+passive: 1
+});
+container.addEventListener("touchend", e => {
+const dx = startX - e.changedTouches[0].clientX;
+Math.abs(dx) > 50 && show(vIndex + (dx > 0 ? 1 : -1))
+});
+function showFeedback(t) {
+let el = container.querySelector(".seek-feedback");
+el || (el = document.createElement("div"), el.className = "seek-feedback", container.appendChild(el));
+el.textContent = t;
+el.classList.add("active");
+setTimeout(() => el.classList.remove("active"), 500)
+}
+container.onclick = e => {
+const now = Date.now(),
+v = video();
+if (!v) return;
+if (now - lastTap < 300) {
+const r = container.getBoundingClientRect(),
+x = e.clientX - r.left;
+x < r.width / 2 ? (v.currentTime = Math.max(0, v.currentTime - 10), showFeedback("⏮ 10s")) : (v.currentTime = Math.min(v.duration, v.currentTime + 10), showFeedback("10s ⏭"))
+} else v.paused ? v.play() : v.pause();
+lastTap = now
+};
+show(0)
+})();
+const f = document.getElementById("enquiryForm"),
+s = document.getElementById("enquiryStatus");
+f.addEventListener("submit", async e => {
+e.preventDefault();
+const i = new Date(f.check_in_date.value),
+o = new Date(f.check_out_date.value);
+const isDayVisit = f.visit_type && f.visit_type.value === "Day Visit";
+if (o < i || (!isDayVisit && o <= i)) {
+s.textContent = "❌ Check-out date must be after check-in date.";
+s.className = "mt-3 text-sm text-red-600";
+return;
+}
+s.textContent = "Sending enquiry...";
+s.className = "mt-3 text-sm text-gray-600";
+try {
+const r = await fetch(f.action, {
+method: "POST",
+body: new FormData(f),
+headers: {
+Accept: "application/json"
+}
+});
+r.ok ? (f.reset(), s.textContent = "✅ Your enquiry has been sent successfully.", s.className = "mt-3 text-sm text-green-600") :
+(s.textContent = "❌ Something went wrong. Please try again.", s.className = "mt-3 text-sm text-red-600")
+} catch {
+s.textContent = "❌ Network error. Please try again later.";
+s.className = "mt-3 text-sm text-red-600"
+}
+});
+(() => {
+const S = document.getElementById("guest-video-reviews");
+if (!S) return;
+let i = 0,
+m = 1,
+sx = 0,
+last = 0;
+const L = [...S.querySelectorAll(".guest-slide")],
+C = S.querySelector(".guest-container"),
+P = S.querySelector(".guest-prev"),
+N = S.querySelector(".guest-next"),
+B = S.querySelector(".guest-play"),
+M = S.querySelector(".guest-mute"),
+K = S.querySelector(".guest-seek"),
+D = S.querySelector(".guest-dots"),
+O = [],
+V = () => L[i].querySelector("video");
+L.forEach((_, n) => {
+const d = document.createElement("span");
+d.className = "dot";
+d.onclick = () => G(n);
+D.appendChild(d);
+O.push(d)
+});
+function stopAll() {
+L.forEach(s => {
+const v = s.querySelector("video");
+v.pause();
+v.currentTime = 0;
+s.classList.remove("active")
+})
+}
+function updateBtn() {
+B.textContent = V().paused ? "▶" : "❚❚"
+}
+function G(n) {
+i = (n + L.length) % L.length;
+stopAll();
+L[i].classList.add("active");
+O.forEach(d => d.classList.remove("active"));
+O[i].classList.add("active");
+V().muted = m;
+updateBtn()
+}
+B.onclick = e => {
+e.stopPropagation();
+V().paused ? V().play() : V().pause()
+};
+M.onclick = () => {
+m = !m;
+L.forEach(s => s.querySelector("video").muted = m);
+M.textContent = m ? "🔇 Unmute" : "🔊 Mute"
+};
+K.oninput = () => V().duration && (V().currentTime = K.value / 100 * V().duration);
+L.forEach(s => {
+const v = s.querySelector("video");
+v.onplay = v.onpause = updateBtn;
+v.ontimeupdate = () => K.value = v.currentTime / v.duration * 100 || 0;
+v.onended = () => G(i + 1)
+});
+P.onclick = () => G(i - 1);
+N.onclick = () => G(i + 1);
+C.addEventListener("touchstart", e => sx = e.touches[0].clientX, {
+passive: 1
+});
+C.addEventListener("touchend", e => {
+const dx = sx - e.changedTouches[0].clientX;
+Math.abs(dx) > 50 && G(i + (dx > 0 ? 1 : -1))
+});
+function feedback(t) {
+let f = C.querySelector(".seek-feedback");
+f || (f = document.createElement("div"), f.className = "seek-feedback", C.appendChild(f));
+f.textContent = t;
+f.classList.add("active");
+setTimeout(() => f.classList.remove("active"), 400)
+}
+C.onclick = e => {
+const now = Date.now(),
+v = V();
+if (now - last < 300) {
+const r = C.getBoundingClientRect(),
+x = e.clientX - r.left;
+x < r.width / 2 ? (v.currentTime = Math.max(0, v.currentTime - 10), feedback("⏮ 10s")) :
+(v.currentTime = Math.min(v.duration, v.currentTime + 10), feedback("10s ⏭"))
+} else v.paused ? v.play() : v.pause();
+last = now
+};
+G(0);
+new IntersectionObserver(E => {
+E.forEach(e => {
+const v = V();
+if (e.isIntersecting) {
+document.querySelectorAll("#videos video").forEach(x => {
+x.pause();
+x.muted = true
+});
+v.play().catch(() => {})
+} else v.pause()
+})
+}, {
+threshold: .6
+}).observe(S);
+const main = document.getElementById("videos");
+main && new IntersectionObserver(E => {
+E.forEach(e => {
+!e.isIntersecting &&
+document.querySelectorAll("#videos video").forEach(v => v.pause())
+})
+}, {
+threshold: .4
+}).observe(main);
+})();
+</script>
+</body>
+</html>
